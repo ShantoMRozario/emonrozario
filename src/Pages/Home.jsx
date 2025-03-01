@@ -1,4 +1,5 @@
-import Banner from "../Components/Banner";
+
+import coverImage from '/src/images/cover.jpg'
 
 
 
@@ -6,7 +7,15 @@ const Home = () => {
     return (
         <div>
             <div className="banner py-[50px]">
-                <Banner/>
+            <div>
+            <div className="relative">
+                <img src={coverImage} alt="" />
+                <div className="absolute top-[50%] left-[10%] w-[500px]">
+                    <h1 className="text-5xl font-bold">Bring Your Creativity Back To Life</h1>
+                    <h2 className="text-2xl pt-5 ">A camera that puts a world of possibilities at your fingertips</h2>
+                </div>
+            </div>
+        </div>
             </div>
             <div className="video">
                 <iframe className="h-[800px] w-[1600px] mx-auto" src="https://www.youtube.com/embed/918e3QVXN0k?si=emv0Xa8EjTIaPdVs" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
